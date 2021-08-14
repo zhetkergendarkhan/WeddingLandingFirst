@@ -28,6 +28,44 @@ hr {
     overflow: hidden;
 }
 
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+@media (max-width: 1200px) {
+    .container{
+        max-width: 970px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container{
+        max-width: 750px;
+    }
+
+    content__row1--item{
+        width: 50%;
+    }
+}
+
+@media (max-width: 767px) {
+    .container{
+        max-width: none;
+    }
+
+    .content__row1{
+        flex-direction: column;
+    }
+
+    .content__row1--item{
+        margin: 30px 0px;
+    }
+
+
+}
+
 
 /*section__first*/
 
@@ -173,53 +211,35 @@ hr {
 /*section__third*/
 
 .section__third{
+    position: relative;
     background: #F2EDE9;
-    width: 100%;
-    height: auto;
-    margin-top: 58px;
+    padding: 70px 0px;
 }
 
-.wedding__plan{
-    padding: 64px;
-}
-
-.wedding__plan--title{
-    text-align: center;
-    font-size: 36px;
-    line-height: 40px;
-    text-align: center;
-    color: #202020;
-}
-
-.wedding__plan--items{
+.content__row1{
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 48px;
 }
 
-.wedding__plan--item--top img{
+.content__row1--item-title{
+    text-align: center;
+    margin: 24px 0px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.content__row1--item{
+    background-color: #FFFF;
+    padding: 15px;
+    flex: 0 1 25%;
+}
+
+.content__row1--item-img{
+    margin-bottom: 10px;
+}
+
+.content__row1--item-img img{
     width: 100%;
-    height: auto;
-}
-
-.wedding__plan--item{
-    width: 33.3333%;
-    max-width: 285px;
-    background: #FFFFFF;
-}
-
-.wedding__plan--item--title{
-    text-align: center;
-    color: #202020;
-    margin: 18px 0px;
-}
-
-.wedding__plan--item--text{
-    text-align: center;
-    color: #202020;
-    margin: 18px 0px;
-    padding: 0px 32px;
 }
 
 /*section__fourth*/
@@ -362,34 +382,6 @@ hr {
         margin-top: 20px;
     }
 
-    /*section__third*/
-
-    .wedding__plan{
-        padding: 54px;
-    }
-
-    .wedding__plan--title{
-        font-size: 30px;
-        line-height: 35px;
-    }
-
-    .wedding__plan--items{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin-top: 48px;
-    }
-
-    .wedding__plan--item{
-        width: 28%;
-    }
-
-    .wedding__plan--item--text{
-        text-align: center;
-        color: #202020;
-        margin: 18px 0px;
-        padding: 0px 32px;
-    }
 
     /*section__fourth*/
 
@@ -441,23 +433,6 @@ hr {
         display: none;
 
     }
-
-
-    /*section__third*/
-
-    .wedding__plan{
-        padding: 54px;
-    }
-
-    .wedding__plan--title{
-        font-size: 30px;
-        line-height: 35px;
-    }
-
-    .wedding__plan--item{
-        height: auto;
-    }
-
 }
 
 @media (max-width:575px){
@@ -476,73 +451,5 @@ hr {
         top: 20%;
         display: none;
 
-    }
-
-    /*section__third*/
-
-    .section__third{
-        background: #F2EDE9;
-        width: 100%;
-        height: auto;
-        margin-top: 108px;
-    }
-
-    .wedding__plan{
-        padding: 64px;
-    }
-
-    .wedding__plan--title{
-        text-align: center;
-        font-size: 36px;
-        line-height: 40px;
-        text-align: center;
-        color: #202020;
-    }
-
-    .wedding__plan--items{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin-top: 48px;
-    }
-
-    .wedding__plan--item--top img{
-        width: 100%;
-        height: auto;
-    }
-
-    .wedding__plan--item{
-        width: 100%;
-        max-width: 285px;
-        background: #FFFFFF;
-        margin: 20px auto;
-
-    }
-
-    .wedding__plan--item--title{
-        text-align: center;
-        color: #202020;
-        margin: 18px 0px;
-    }
-
-    .wedding__plan--item--text{
-        text-align: center;
-        color: #202020;
-        margin: 18px 0px;
-        padding: 0px 32px;
-    }
-
-
-    .wedding__plan{
-        padding: 54px;
-    }
-
-    .wedding__plan--title{
-        font-size: 30px;
-        line-height: 35px;
-    }
-
-    .wedding__plan--item{
-        height: auto;
     }
 }
